@@ -99,19 +99,19 @@ body {
 }
 
 .container.container.weak .strengthMeter::after {
-  content: "Weak Password";
+  content: "Fraca";
   color: #f00;
   filter: drop-shadow(0 0 5px#f00);
 }
 
 .container.container.container.moderate .strengthMeter::after {
-  content: "Moderate Password";
+  content: "Moderada";
   color: #eedc3d;
   filter: drop-shadow(0 0 5px#eedc3d);
 }
 
 .container.container.container.container.strong .strengthMeter::after {
-  content: "Strong Password";
+  content: "Forte";
   color: #18e605;
   filter: drop-shadow(0 0 5px#18e605);
 }
