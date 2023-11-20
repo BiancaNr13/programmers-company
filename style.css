@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+9@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -143,3 +143,8 @@ body {
 .show.hide::before {
   content: "Hide";
 }
+
+.explicação{
+
+height: 05px;
+font-family:"Poppins", sans-serif;}
