@@ -25,8 +25,8 @@ body{
     flex-direction: row;
     position: relative;
     padding: 60px 20px 30px 20px;
-    height: 550px;
-    width: 350px;
+    height: 650px;
+    width: 400px;
     background-color: rgba(27, 20, 20, 0.911);
     border-radius: 30px;
     -webkit-backdrop-filter: blur(15px);
@@ -46,7 +46,7 @@ body{
     position: absolute;
     width: 85%;
     right: -350px;
-    bottom: 14%;
+    bottom: 24%;
     transition: .5s ease-in-out;
 
 }
@@ -174,8 +174,8 @@ i{
     display: flex;
     position: absolute;
     bottom: 20px;
-    left: 50px;
-    width: 70%;
+    left: 70px;
+    width: 60%;
     height: 50px;
     background: rgba(104, 103, 103, 0.315);
     backdrop-filter: blur(10%);
