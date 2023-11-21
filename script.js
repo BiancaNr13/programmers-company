@@ -3,7 +3,7 @@ function Strength(password) {
   if (password.length > 6) {
     i++;
   }
-  if (password.length >= 10) {
+  if (password.length >= 8) {
     i++;
   }
 
