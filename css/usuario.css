@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 10vh;
+}
+
+header .logo{
+    display: flex;
+    width: 30%;
+    cursor: pointer;
+}
+
+header .img-logo{
+    height: 4vh;
+    padding-right: 1%; 
+}
+
+header nav{
+    width: 40%;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+.first{
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left{
+    border: 2px solid rgb(226, 231, 216);
+    height: 30em;
+    transform: translateY(-30%);
+}
+
+.first .text-left{
+    border: 2px solid pink;
+    width: 90%;
+    margin-left: 7%;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 15;
+
+}
+
+.text-left h1{
+    font-size: 30;
+}
+
+.botao{
+    border: 2px solid green;
+    height: 15%;
+    width: 50%;
+    margin-left:7%;
+    display: flex;
+}
+
+.botao a{
+    text-align: none;
+}
+
+#btn-pergunta{
+    height: 50%;
+    width: 35%;
+}
