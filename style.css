@@ -33,8 +33,8 @@ body {
     linear-gradient(transparent, transparent, #0005);
 }
 .container h2 {
-  color: #666;
-  font-weight: 500;
+  color: white;
+  font-weight: 400;
 }
 
 .container .inputArea {
@@ -51,6 +51,12 @@ body {
   padding: 10px;
   color: aliceblue;
   font-size: 1.1em;
+   border: 2px solid transparent;
+   background-clip: padding-box;
+   border-image: linear-gradient(to right, blue, rgb(247, 10, 156), red, yellow, rgb(17, 230, 17), rgb(121, 4, 121), rgb(78, 77, 77))1;
+   border-image-slice: 1;
+   padding: 8px;
+
 }
 
 .container .strengthMeter {
@@ -60,6 +66,8 @@ body {
   width: 100%;
   height: 3px;
   background: #222;
+  
+  
 }
 
 .container .strengthMeter::before {
@@ -72,7 +80,7 @@ body {
 }
 
 .container.weak .strengthMeter::before {
-  width: 10%;
+  width: 10;
   background: #f00;
   filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00)
     drop-shadow(0 0 20px #f00);
@@ -108,7 +116,7 @@ body {
 
 .container.container.container.moderate .strengthMeter::after {
   content: "Moderada";
-  color: #eedc3d;
+  color: #eedc3d);
   filter: drop-shadow(0 0 5px#eedc3d);
 }
 
@@ -120,9 +128,9 @@ body {
 
 .show {
   position: absolute;
-  top: 0;
+  top: -04px;
   right: 0;
-  width: 60px;
+  width: 50px;
   height: 100%;
   background: #333;
   border: 6px solid #222;
@@ -132,8 +140,12 @@ body {
   display: flex;
 }
 
+.eyes{
+  
+}
+
 .show::before {
-  content: "Show";
+  content: none;
   font-size: 0.6em;
   color: aliceblue;
   letter-spacing: 0.15em;
@@ -141,6 +153,25 @@ body {
 }
 
 .show.hide::before {
-  content: "Hide";
+  
 }
+
+.btn{
+  background: rgb(73, 73, 73);
+  box-shadow: 15px #111 ;
+  color: white;
+  border: none;
+  padding: 05px;
+  width: 180px;
+  border-radius: 5px;
+  position: relative;
+  left: 300px;
+}
+
+.explicação{
+
+  color: aliceblue;
+}
+
+
 

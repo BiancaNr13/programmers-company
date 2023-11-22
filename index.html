@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>CodePen - A Pen by Coding Stella</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <h2>Crie sua senha</h2>
-  <div class="inputArea">
-    <input type="password" placeholder="Senha" id="YourPassword">
-    <div class="show"></div>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <h2>Crie sua senha</h2>
+    <div class="inputArea">
+      <input type="password" placeholder="Senha" id="YourPassword">
+      <div class="show">
+        <img class="eyes" src="assets/icons8-eyes-32 (2).png">
+      </div>
+    </div>
+    <div class="strengthMeter"></div>
+    <div class="explicação">
+      <p>
+        <ul>
+          <li>Sua senha tem que conter 8 digitos</li>
+          <li>Pelo menos um número</li>
+          </li>
+          <li> Tem que ter uma letra maiuscula</li>
+          <li>Não utilize dados pessoais</li>
+          <li>Não utilize sequências</li>
+        </ul>
+    </div>
+
+    <button class="btn">CADASTRAR</button>
   </div>
-  <div class="strengthMeter"></div>
- <div class="explicação"><p><ol><li>sua senha tem que conter 8 </li> <li>pelo menos um número</li>
-</li> <li> tem que ter uma letra maiuscula</li> </ol>
-</div>
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
 
 </body>
+
 </html>
