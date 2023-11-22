@@ -12,13 +12,18 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: black;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(to right, blue, rgb(247, 10, 156), red, yellow, rgb(17, 230, 17), rgb(121, 4, 121), rgb(105, 220, 255))1;
+  border-image-slice: 1;
+  padding: 8px;
 }
 
 .container {
   position: relative;
   width: 800px;
   height: 400px;
-  left: 150px;
+  left: 400px;
   border-radius: 20px 20px 0 0;
   padding: 30px;
   background: #333;
@@ -171,6 +176,12 @@ body {
 .explicação{
 
   color: aliceblue;
+}
+
+.cadastro{
+
+  width: 30rem;
+  
 }
 
 
