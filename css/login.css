@@ -42,16 +42,6 @@ body{
     transition: .5s ease-in-out;
 }
 
-.box-register{
-    position: absolute;
-    width: 85%;
-    right: -350px;
-    bottom: 14%;
-    transition: .5s ease-in-out;
-
-}
-
-
 .top-header{
     text-align: center;
     margin: 30px 0;
@@ -104,14 +94,7 @@ body{
 }
 .eye-area-1{
     position: absolute;
-    top: 63%;
-    right: 25px;
-
-}
-
-.eye-area{
-    position: absolute;
-    top: 56%;
+    top: 54%;
     right: 25px;
 
 }
@@ -129,11 +112,11 @@ i{
     cursor: pointer;
 }
 
-#eye, #eye-2{
+#eye{
     opacity: 1;
 }
 
-#eye-slash, #eye-slash-2{
+#eye-slash{
     opacity: 0;
 
 }
@@ -208,5 +191,14 @@ i{
     border-radius: 10px;
     box-shadow: 2px 0px, 12px rgba(0, 0, 0, 0.1);
     transition: .5s ease-in-out;
+}
+
+.esq a{
+    color: white;
+    text-decoration: none;
+}
+
+.esq a:hover{
+    color: rgba(172, 255, 47, 0.877);;
 }
 
