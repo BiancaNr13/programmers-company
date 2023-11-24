@@ -19,6 +19,12 @@ body {
   padding: 8px;
 }
 
+.H1{ 
+color: white;
+box-shadow: 10px 5px 15px blue;
+width: 100%;  
+height: 80px;
+}
 
 .container {
   position: relative;
@@ -185,13 +191,6 @@ body {
   
 }
 
-.H1{ 
-color: white;
-box-shadow: 10px 5px 15px blue;
-width: 100%;  
-height: 80px;
-left:50%;
-}
 
 .explicação{ 
 color: white;
