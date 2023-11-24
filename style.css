@@ -196,5 +196,11 @@ color: white;
 
 .site{
 
-float: right;
-position:relative; }
+    float: right;
+    position:relative;
+    width: 60%;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
