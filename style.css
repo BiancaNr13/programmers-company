@@ -14,7 +14,7 @@ body {
   background: black;
   border: 2px solid transparent;
   background-clip: padding-box;
-  border-image: linear-gradient(to right, blue, rgb(247, 10, 156), red, yellow, rgb(17, 230, 17), rgb(121, 4, 121), aquarine,1;
+  border-image: linear-gradient(to right, blue, rgb(247, 10, 156), red, yellow, rgb(17, 230, 17), rgb(121, 4, 121), red)1;
   border-image-slice: 1;
   padding: 8px;
 }
