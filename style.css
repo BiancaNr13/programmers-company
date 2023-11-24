@@ -188,6 +188,8 @@ body {
 .H1{ 
 color: white;
 box-shadow: 10px 5px 15px blue;
+position:relative;
+top: 50px;
 }
 
 .explicação{ 
