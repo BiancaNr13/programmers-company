@@ -27,7 +27,6 @@ body {
 }
 
 nav{
-  border: 2px solid red;
   position: relative;
   left: 40%;
   width: 15%;
@@ -62,4 +61,30 @@ background: #2c1c43;
   right: 15%;
   
 }
+ 
+.h3-sobre{
+  font-size: 30px;
+}
+
+
+.explicação{
+  width: 30%;
+  position: relative;
+  left: 20%;
+  top:-18em;
+  height: 15em;
+  display: none;
+}
+
+
+.nerds{
+  width: 600px;
+  border: 2px solid ;
+  position: relative;
+  left: 18%;
   
+}
+
+.nerds:hover .explicação{
+  display: contents;
+}
