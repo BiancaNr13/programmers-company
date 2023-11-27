@@ -121,7 +121,7 @@ body {
 
 .container.container.container.moderate .strengthMeter::after {
   content: "Moderada";
-  color: #eedc3d);
+  color: #eedc3d;
   filter: drop-shadow(0 0 5px#eedc3d);
 }
 
