@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/7ec38cafb0.js" crossorigin="anonymous"></script>
+    <title>Programmers Company</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <!--------------Aprendiz-------------->
+            <div class="box-apr" id="apr">
+                <div class="top-header">
+                    <h3>Olá, seja bem vindo</h3>
+                    <small>Estamos felizes em te ver por aqui!</small>
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-field">
+                        <input type="text" class="input-box" id="aprEmail" required>
+                        <label for="aprEmail">Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="input-box" id="aprPassword" required>
+                        <label for="aprPassword">Senha</label>
+                    </div>
+
+                    <div class="eye-area-1">
+                        <div class="eye-box" onclick="myaprPassword()">
+                            <i class="fa-regular fa-eye" id="eye"></i>
+                            <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" id="formCheck" class="check">
+                    <label for="formCheck">Lembrar Usuário</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="submit" class="input-submit" value="Cadastrar">
+                </div>
+
+                <div class="esq">
+                    <a href="#">Esqueci a Senha</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        //visualizar senha
+        function myaprPassword() {
+            var a = document.getElementById('aprPassword');
+            var b = document.getElementById('eye');
+            var c = document.getElementById('eye-slash');
+
+            if (a.type === "password") {
+                a.type = "text";
+                b.style.opacity = "0";
+                c.style.opacity = "1";
+            }
+            else {
+                a.type = "password";
+                b.style.opacity = "1";
+                c.style.opacity = "0";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
