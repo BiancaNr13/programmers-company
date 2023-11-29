@@ -20,6 +20,7 @@ body {
   border-image-slice: 1;
   padding: 8px;
   color: white;
+  overflow-x: hidden;
 }
 
 .img-logo {
@@ -130,7 +131,7 @@ nav {
 
 .explicacao {
   width: 70%;
-  position: relative;
+  position: absolute;
   top: 100px;
   margin-left: 2%;
 }
@@ -228,6 +229,8 @@ ol {
   color: #ffffff;
   border: solid 0.5px rgba(0, 0, 0, 0.61);
   text-align: center;
+  position: relative;
+  padding-top:1% ;
 
 
 }
@@ -246,15 +249,11 @@ ol {
   flex-wrap: nowrap;
   width: 100%;
   transition: all 500ms ease;
+  flex: 0 0 auto;
 
 }
 
 .slider-item {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.slider>.slider-content {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -273,4 +272,55 @@ ol {
 
 .slider>input:nth-child(4):checked~.slider-content {
   transform: translateX(-300%);
+}
+
+
+
+@media(max-width:1200px){
+  .topo{
+    height: 900px;
+  }
+  nav{
+    height: 70px;
+  }
+
+  .btns{
+    display: flex;
+    width: 100px;
+  }
+
+  .img-logo{
+    transform: translate(1px, 2px);
+    width: 60px;
+    height: 60px;
+  }
+  .sobre,.beneficios  {
+    height: 330px;
+  }
+  .sobre h1{
+    font-size: 30px;
+  }
+
+  .nerdola{
+    transform: translate(470px, -470px);
+  }
+
+  .Serviços{
+   
+    height: 810px;
+  }
+
+  .box{
+    height: 450px;
+    width: 500px;
+  }
+
+  .plan{
+    height: 600px;
+  }
+
+  .slider{
+    height: 440px;
+  }
+
 }
