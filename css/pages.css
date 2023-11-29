@@ -328,7 +328,7 @@ ol {
 footer{
     width: 100vw;
     height: 351px;
-    background-color: #111826;
+    background-color: black;
     color: #ffffff;
     display: flex;
     flex-direction: column;
