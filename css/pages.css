@@ -328,7 +328,7 @@ ol {
 footer{
     width: 100vw;
     height: 351px;
-    background: Black;
+    background-image: linear-gradient(to right, black, purple);
     color: #ffffff;
     display: flex;
     flex-direction: column;
