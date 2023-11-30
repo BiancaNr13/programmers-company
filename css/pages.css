@@ -19,7 +19,7 @@ body {
   border-image: linear-gradient(to right, rgb(247, 10, 156), rgb(228, 20, 255), rgb(181, 26, 253), rgb(255, 12, 255), purple)1;
   border-image-slice: 1;
   padding: 8px;
-  color: white;
+  color: black;
   overflow-x: hidden;
 }
 
