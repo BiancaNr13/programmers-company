@@ -9,7 +9,7 @@
 
 body{
     color: white;
-    background: black;
+    background: rgb(23, 0, 54);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,6 +108,7 @@ header a{
     width: 65%;
     cursor: pointer;
 }
+
 
 .sec{
     display: flex;

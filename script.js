@@ -52,5 +52,8 @@ show.onclick = function () {
     password.setAttribute("type", "password");
     show.classList.remove("hide");
   }
+
+
+  ('')
 };
 

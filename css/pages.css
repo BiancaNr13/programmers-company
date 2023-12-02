@@ -16,20 +16,10 @@ body {
   background: rgb(23, 0, 54);
   border: 7px solid transparent;
   background-clip: padding-box;
-  border-image: linear-gradient(to right, rgb(247, 10, 156), rgb(228, 20, 255), rgb(181, 26, 253), rgb(255, 12, 255), purple)1;
+  border-image: linear-gradient(to right, rgba(128, 0, 128, 0.671), #736686, #a299ae, #a299ae, #45335e, rgba(128, 0, 128, 0.671))1;
   border-image-slice: 1;
-  padding: 8px;
   color: white;
   overflow-x: hidden;
-}
-
-.img-logo {
-  transform: translateX(140%);
-  border-radius: 50px;
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-
 }
 
 .topo {
@@ -43,6 +33,8 @@ nav {
   justify-content: center;
   align-items: center;
   height: 90px;
+  background: #45335e;
+  position: fixed;
 }
 
 .btns {
@@ -71,8 +63,8 @@ nav {
 }
 
 .h1-bv {
-
-
+  justify-self: left;
+  align-items: flex-start;
   color: #fff;
   font-family: monospace;
   overflow: hidden;
@@ -324,6 +316,7 @@ ol {
   .slider{
     height: 440px;
   }
+}
 
 footer{
     width: 100vw;
@@ -399,4 +392,4 @@ footer li{
 position: relative;
 margin-top: 11px;
 
-}
+}
