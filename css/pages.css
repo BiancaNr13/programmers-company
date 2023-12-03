@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  
 }
+
 
 body {
   display: flex;
@@ -13,46 +16,93 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(to right, black, purple);
+  background: rgb(25, 0, 33);
   border: 7px solid transparent;
   background-clip: padding-box;
-  border-image: linear-gradient(to right, rgb(247, 10, 156), rgb(228, 20, 255), rgb(181, 26, 253), rgb(255, 12, 255), purple)1;
   border-image-slice: 1;
   padding: 8px;
   color: white;
+  margin-left: 50px;
+  
+}
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height: 80px;
+  background-image: linear-gradient(to top, rgba(248, 13, 13, 0), rgb(0, 0, 0));
+  position: absolute;
+  z-index: 1000;
+  border: solid red;
+  
+}
+
+.nav-img{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 15px;
+  width: auto;
+  margin-left: 25px;
+  border: solid pink;
 }
 
 .img-logo {
-  transform: translateX(140%);
-  border-radius: 50px;
   cursor: pointer;
-  width: 70px;
+  width: 60px;
   height: 70px;
 
 }
 
-.topo {
-  width: 100%;
-  height: 750px;
+.h1-bv {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  
 }
 
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
+.nav-links{
+  margin-right:40px;
+  width: 530px;
+}
+
+.nav-links a{
+  
+  text-decoration: none;
+  width: 64px;
+  height: 19px;
+  margin-right: 51px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff82;
+  text-align: left;
+  
 }
 
 .btns {
-  width: 15%;
-  transform: translateX(260%);
-
+  
+  width: 20%;
+  
 }
 
-.button2,
+.button2{
+
+  background: #ffffff;
+  color: rgb(62, 0, 84);
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 110px;
+  font-weight: 600;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
 .button1 {
-  background: #000000;
+  background: #00000000;
   color: rgb(255, 255, 255);
   border: 1px solid white;
   border-radius: 20px;
@@ -63,69 +113,60 @@ nav {
   cursor: pointer;
 }
 
-.button2:hover,
+.button2:hover{
+
+  background: #c9c9c9b5;
+}
 .button1:hover {
-  border: blueviolet;
-  background: purple;
+
+  background: rgba(65, 0, 88, 0.561);
 }
 
-.h1-bv {
-
-
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid purple;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation:
-    typing 5s steps(30, end),
-    blink-caret .6s step-end infinite;
+.inicio {
+  border: solid aqua;
+  display: fle;
+margin-right: 45vw;
+  margin-top: 5vw;
+  
+  
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
+.h1-bene {
+  width: auto;
+    border: solid green;
+    
+    
+}
+.exp-serv{
 
-  to {
-    width: 20%
-  }
+  border: solid rgb(128, 0, 102);
+  width: 500px;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
 
-  from,
-  to {
-    border-color: transparent
-  }
 
-  50% {
-    border-color: purple
-  }
+
+.nerdola {
+  width: 450px;
+  border: solid;
+  margin-left: 50vw;
+  margin-bottom: 50vw;
+  
+  
 }
 
-.sobre {
+.topo {
   width: 100%;
-  height: 200px;
-  margin-left: 5px;
+  height: 750px;
 }
 
+.sobre{
+  border: solid purple;
+}
 .h3-sobre {
-  left: 20px;
+  
   font-weight: 200;
   font-size: 25px;
-  margin-left: 5px;
-  position: relative;
-  top: 10px;
 }
 
 .explicacao {
@@ -140,24 +181,14 @@ nav {
   width: 100%;
 }
 
-.h1-bene {
-  left: 20px;
-  font-weight: 500;
-  font-size: 50px;
-  margin-left: 2px;
 
-}
-
-.Serviços {
-  margin-left: 5px;
-
-}
 
 .serv {
   margin-left: 5px;
   left: 20px;
   font-weight: 200;
   font-size: 25px;
+  border: solid saddlebrown;
 
 }
 
@@ -181,11 +212,9 @@ h4 {
   color: rgba(255, 255, 255, 0.678);
 }
 
-.sobre,
+
 .beneficios {
-  width: 70%;
-  transform: translateY(30%);
-  margin-left: 5px;
+  border: solid red;
 }
 
 ol {
@@ -203,16 +232,12 @@ ol {
   color: #ffffff;
   border: solid 0.5px rgba(0, 0, 0, 0.61);
   padding: 12px;
+  border: solid rgb(30, 0, 255);
 
 
 }
 
-.nerdola {
-  width: 550px;
-  transform: translate(210%, -70%);
-  border: #000000;
 
-}
 
 .Prepare-se {
   margin-left: 5px;
