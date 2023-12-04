@@ -12,5 +12,5 @@ Alguns benefícios adicionais são o desenvolvimento de habilidades sociais, con
 </p>
 <br>
 
-<h3> conheçam nosso site </h3>
+<h3> conheçam nosso site! 😉👋🏻 </h3>
 
