@@ -1,207 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    background: rgb(23, 0, 54);
-    color: white;
-    border: 4px solid transparent;
-    background-clip: padding-box;
-    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.671), #736686, #a299ae, #a299ae, #45335e, rgba(128, 0, 128, 0.671))1;
-    border-image-slice: 1;
-    padding: 8px;
-
-}
-
-.container{
+    font-family: "Poppins", sans-serif;
+  }
+  
+  section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-
-.box{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    padding: 60px 20px 30px 20px;
-    height: 550px;
-    width: 350px;
-    background-color: rgba(27, 20, 20, 0.911);
-    border-radius: 30px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    overflow: hidden;
-}
-
-.box-apr{
-    position: absolute;
-    width: 85%;
-    left: 27px;
-    transition: .5s ease-in-out;
-}
-
-.top-header{
-    text-align: center;
-    margin: 30px 0;
-}
-
-.top-header h3{
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.input-group{
     width: 100%;
-}
-
-.input-field{
-    margin: 12px 0;
+    background: url("https://img.freepik.com/vetores-gratis/fluxo-de-design-de-codigo-binario_53876-97406.jpg?w=740&t=st=1701653084~exp=1701653684~hmac=e0477432320a8d21d51b52bed38e831d8bac5f57d16e64488d05ba81f016123e") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .form-box {
     position: relative;
-    
-}
-
-.input-box{
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffffaf;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  input:focus ~ label {
+    top: -5px;
+  }
+  input:valid ~ label {
+    top: -5px;
+  }
+  
+  .inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #ffffff;
+  }
+  
+  .inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #ffffff;
+    font-size: 1.2em;
+    top: 20px;
+  }
+  
+  .forget {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+  }
+  
+  .forget label:nth-child(2) {
+    order: 1;
+  }
+  
+  .forget label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .forget label input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  .forget label a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .forget label a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
     width: 100%;
     height: 40px;
-    font-size: 15px;
-    color: rgb(233, 228, 228);
+    border-radius: 40px;
+    background: rgb(255, 255, 255);
     border: none;
-    border-radius: 10px;
-    padding: 7px 45px 0 20px;
-    background-color: rgba(104, 103, 103, 0.315);
-    backdrop-filter: blur(2px);
     outline: none;
-
-}
-
-.input-field label{
-    position: absolute;
-    left: 20px;
-    top: 12px;
-    font-size: 15px;
-    transition: .1s ease-in-out;
-}
-
-.input-box:focus ~ label, .input-box:valid ~ label{
-    top: 2px;
-    font-size: 10px;
-    color: rgb(206, 47, 255);
-    font-weight: 500;
-
-}
-.eye-area-1{
-    position: absolute;
-    top: 54%;
-    right: 25px;
-
-}
-
-.eye-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-}
-
-i{
-    position: absolute;
     cursor: pointer;
-}
-
-#eye{
-    opacity: 1;
-}
-
-#eye-slash{
-    opacity: 0;
-
-}
-
-.remember{
-    display: flex;
-    font-size: 13px;
-    margin: 12px 0 30px 0;
-
-}
-
-.check{
-    margin-right: 8px;
-    width: 14px;
-}
-
-.input-submit{
-    width: 100%;
-    height: 50px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    border-radius: 10px;
-    background: rgba(47, 224, 255, 0.795);
-    color: white;
-    box-shadow: 0px 4px 20px rgba(62,9,9,0.1);
-    cursor: pointer;
-    transition: .1s;
-}
-
-.input-submit:hover{
-    background-color: rgba(128, 0, 128, 0.671);
-    box-shadow: 0px 4px 20px rgba(62,9,9,0.32);
-
-}
-
-.switch{
-    display: flex;
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    width: 70%;
-    height: 50px;
-    background: rgba(104, 103, 103, 0.315);
-    backdrop-filter: blur(10%);
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-
-}
-
-.switch a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  
+  .register p a {
     text-decoration: none;
-    width: 50%;
-    border-radius: 10px;
-    z-index: 10;
-}
-
-#btn{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 120px;
-    height: 50px;
-    background: #cccccd;
-    border-radius: 10px;
-    box-shadow: 2px 0px, 12px rgba(0, 0, 0, 0.1);
-    transition: .5s ease-in-out;
-}
-
-.esq a{
-    color: white;
-    text-decoration: none;
-}
-
-.esq a:hover{
-    color: rgba(128, 0, 128, 0.671);
-}
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .register p a:hover {
+    text-decoration: underline;
+  }

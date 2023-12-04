@@ -16,23 +16,24 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgb(25, 0, 33);
+  background: rgb(13, 0, 33);
   border: 7px solid transparent;
   background-clip: padding-box;
   border-image-slice: 1;
   padding: 8px;
   color: white;
+  overflow-x: hidden;
   
 }
 nav {
   width: 100%;
-  top: 0;
+  top:0;
   left: 0;
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height: 55px;
-  background-color: rgba(32, 32, 32, 0.596);
+  height: 70px;
+  background: linear-gradient(to bottom, #000000, #00000000);
   position: fixed;
   z-index: 1000;
 
@@ -58,23 +59,26 @@ nav {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
-  
+  width: 300px;
 }
 
 .nav-links{
-  margin-right:40px;
-  width: 530px;
+  margin-right:50px;
+  width: 430px;
+  display: flex;
+  margin-left: 150px;
+  
 }
 
 .nav-links a{
   
   text-decoration: none;
-  width: 64px;
+  width: 100px;
   height: 19px;
   margin-right: 51px;
   font-size: 20px;
-  font-weight: 400;
-  color: #ffffff82;
+  font-weight: 600;
+color: rgb(255, 255, 255);
   text-align: left;
   
 }
@@ -85,7 +89,9 @@ nav {
 
 .btns {
   
-  width: 20%;
+  width: 50%;
+  display: flex;
+  margin-left: 130px;
   
 }
 
@@ -110,20 +116,19 @@ nav {
   height: 40px;
   width: 100px;
   font-weight: 600;
-  margin-left: 5%;
   cursor: pointer;
 }
 
 .button2:hover{
 
-  background: rgba(65, 0, 88, 0.561);
+  background: rgba(134, 54, 255, 0.646);
   color: #fff;
-  box-shadow: 2px 2px 4px #6805fc;
+  box-shadow: 2px 2px 4px #000000;
 }
 .button1:hover {
-
-  background: rgba(65, 0, 88, 0.561);
-  box-shadow: 2px 2px 4px #6805fc;
+color:rgba(255, 255, 255, 0.974);
+  background: rgba(134, 54, 255, 0.378);
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .inicio {
@@ -150,10 +155,12 @@ nav {
 
 .nerdola {
   width: 450px;
+  margin-top: 100px;
 }
 
 #sobre{
-  margin-top: 10%;
+  margin-top: 8%;
+  margin-bottom: 60px;
 }
 
 .h3-sobre {cursor: pointer;
@@ -166,11 +173,6 @@ nav {
   width: 70%;
   position: relative;
   margin-left: 2%;
-}
-
-#servicos{
-  border:2px solid green;
-
 }
 
 .serv {
@@ -194,6 +196,7 @@ nav {
 
 h4 {
   font-size: large;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   
@@ -201,7 +204,8 @@ h4 {
 
 .p {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.678);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.678);
 }
 
 .card{
@@ -214,17 +218,16 @@ h4 {
   width: 300px;
   height: 250px;
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 4%;
-  color: #ffffff;
-  border: 1px solid white ;
+  color: #000000;
   padding: 12px;
+  background-color: rgba(255, 255, 255, 0.413) ;
 
 }
 
 .box:hover{
-  box-shadow: 2px 2px 4px #6805fc;
-  border: 2px solid purple;
+
 }
 
 
@@ -233,35 +236,50 @@ h4 {
   margin-left: 5px;
 }
 
-#plan{
-  border: 2px solid greenyellow;
-  
-}
 
-.carousel {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  border: 1px solid #ccc;
-}
 
-.carousel-text {
+footer{
+  padding-top: 3%;
+  padding-left: 3%;
+  position: relative;
+  width: 104%;
+  height: 20em;
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  background-color: rgb(0, 0, 0);
+
+}
+footer li{
+  list-style: none;
 }
 
-.carousel-item {
-  flex: 0 0 100%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
-  background-color: #f0f0f0;
-  border-right: 1px solid #ccc;
+footer a{
+  color: #fff;
+  text-decoration: none;
 }
 
-.carousel-item[data-active="true"] {
-  display: block;
+footer a:hover{
+  text-shadow: 2px 2px 8px #6400fa;
 }
+
+.link-footer{
+  width: 20%;
+  height: 70%;
+}
+
+.nossos-planos input{
+  width: 95%;
+}
+
+hr{
+  position: relative;
+  left: -200%;
+  width: 500%;
+}
+
+.copy p{
+  font-size: 14px;
+}
+
 
 @media(max-width:1100px)  {
   .nav-img{
@@ -284,4 +302,52 @@ h4 {
 
     width: 40%;
   }
+}
+/* Estilos para planos de assinatura */
+
+#planos {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.plano {
+  border-radius: 20px;
+  padding: 50px;
+  margin: 20px;
+  display: inline-block;
+  background-color: #000000;
+  
+}
+
+
+
+.plano h3 {
+  font-size: 24px;
+}
+
+.plano p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.plano button {
+  background: #000000d0;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.plano button:hover {
+  background-color: rgba(255, 255, 255, 0.171);
+}
+
+.h1-bene{
+  font-size: 45px;
 }

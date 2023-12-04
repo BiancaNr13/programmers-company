@@ -60,12 +60,23 @@ show.onclick = function () {
 document.addEventListener("DOMContentLoaded", function () {
   const carouselText = document.getElementById("carouselText");
   const items = document.querySelectorAll(".carousel-item");
+  const indicatorsContainer = document.getElementById("carouselIndicators");
 
   let currentIndex = 0;
 
   function showSlide(index) {
     items.forEach((item, i) => {
       item.setAttribute("data-active", i === index);
+    });
+
+    updateIndicators(index);
+  }
+
+  function updateIndicators(index) {
+    const indicators = Array.from(indicatorsContainer.children);
+
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle("active", i === index);
     });
   }
 
@@ -74,6 +85,18 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentIndex);
   }
 
+  function createIndicators() {
+    items.forEach((_, i) => {
+      const indicator = document.createElement("div");
+      indicator.classList.add("indicator");
+      indicator.addEventListener("click", () => showSlide(i));
+      indicatorsContainer.appendChild(indicator);
+    });
+  }
+
+  createIndicators();
+  showSlide(currentIndex); // Mostrar o primeiro slide
   setInterval(nextSlide, 3000); // Muda o slide a cada 3 segundos (3000 milissegundos)
 });
+
 

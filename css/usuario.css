@@ -17,17 +17,23 @@ body{
 }
 
 header{
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 90vw;
-    height: 10vh;
+    align-items:center;
+    height: 55px;
+    background-color: rgba(32, 32, 32, 0.596);
+    position: fixed;
+    z-index: 1000;
 }
 
 header .logo{
     display: flex;
-    width: 30%;
+    width: 40%;
     cursor: pointer;
+    font-size: 13px;
 }
 
 header .img-logo{
@@ -38,6 +44,7 @@ header .img-logo{
 
 header nav{
     width: 40%;
+ 
 }
 
 header a{
@@ -45,6 +52,11 @@ header a{
     text-decoration: none;
     justify-content: space-between;
     padding-left: 2%;
+    
+}
+
+header a:hover {
+    text-shadow: 2px 2px 8px #6805fc;
 }
 
 .first{
@@ -96,16 +108,14 @@ header a{
 }
 
 .btn-pergunta:hover{
-    background-color: rgb(47, 248, 255);
-    border:2px solid rgb(0, 162, 255);
+    background-color: #6805fcc0;
+    border:2px solid purple;
     height: 55%;
     width: 40%;
 }
 
 .first .img-right{
-    height: 40em;
-    margin-right: 4%;
-    width: 65%;
+    transform: translateY(8%);
     cursor: pointer;
 }
 
@@ -152,7 +162,7 @@ header a{
     border-radius: 50%;
 }
 .sec .box:hover{
-    border: 2px solid rgb(47, 255, 245);
+    border: 2px solid #6805fc;
     width: 60%;
     height: 100%;
 
