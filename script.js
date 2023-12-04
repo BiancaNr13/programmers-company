@@ -57,3 +57,23 @@ show.onclick = function () {
   ('')
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselText = document.getElementById("carouselText");
+  const items = document.querySelectorAll(".carousel-item");
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    items.forEach((item, i) => {
+      item.setAttribute("data-active", i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlide(currentIndex);
+  }
+
+  setInterval(nextSlide, 3000); // Muda o slide a cada 3 segundos (3000 milissegundos)
+});
+

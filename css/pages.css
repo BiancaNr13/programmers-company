@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * 
@@ -23,7 +22,6 @@ body {
   border-image-slice: 1;
   padding: 8px;
   color: white;
-  margin-left: 50px;
   
 }
 nav {
@@ -33,11 +31,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height: 80px;
-  background-image: linear-gradient(to top, rgba(248, 13, 13, 0), rgb(0, 0, 0));
-  position: absolute;
+  height: 55px;
+  background-color: rgba(32, 32, 32, 0.596);
+  position: fixed;
   z-index: 1000;
-  border: solid red;
+
   
 }
 
@@ -47,8 +45,6 @@ nav {
   align-items: center;
   font-size: 15px;
   width: auto;
-  margin-left: 25px;
-  border: solid pink;
 }
 
 .img-logo {
@@ -81,6 +77,10 @@ nav {
   color: #ffffff82;
   text-align: left;
   
+}
+
+.nav-links a:hover{
+  text-shadow: 2px 2px 8px #6805fc;
 }
 
 .btns {
@@ -116,355 +116,78 @@ nav {
 
 .button2:hover{
 
-  background: #c9c9c9b5;
+  background: rgba(65, 0, 88, 0.561);
+  color: #fff;
+  box-shadow: 2px 2px 4px #6805fc;
 }
 .button1:hover {
 
   background: rgba(65, 0, 88, 0.561);
+  box-shadow: 2px 2px 4px #6805fc;
 }
 
 .inicio {
-  border: solid aqua;
-  display: fle;
-margin-right: 45vw;
-  margin-top: 5vw;
-  
-  
+  width: 100%;
+  height: 98%;
+  margin-top: 2%;
+  display: flex;
 }
 
 .h1-bene {
-  width: auto;
-    border: solid green;
-    
-    
-}
-.exp-serv{
-
-  border: solid rgb(128, 0, 102);
-  width: 500px;
+  height: 25%;
+  margin-top: 20%;
 }
 
-
-
+.btn-inicio{
+  width: 50%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.btn-inicio .button1, .btn-inicio .button2{
+  border: 2px solid;
+  border-radius: 2px;
+}
 
 .nerdola {
   width: 450px;
-  border: solid;
-  margin-left: 50vw;
-  margin-bottom: 50vw;
-  
-  
 }
 
-.topo {
-  width: 100%;
-  height: 750px;
+#sobre{
+  margin-top: 10%;
 }
 
-.sobre{
-  border: solid purple;
-}
-.h3-sobre {
-  
+.h3-sobre {cursor: pointer;
   font-weight: 200;
   font-size: 25px;
+  margin-bottom: 2%;
 }
 
 .explicacao {
   width: 70%;
   position: relative;
-  top: 100px;
   margin-left: 2%;
 }
 
-.beneficios {
-  height: 250px;
-  width: 100%;
+#servicos{
+  border:2px solid green;
+
 }
-
-
 
 .serv {
-  margin-left: 5px;
-  left: 20px;
-  font-weight: 200;
-  font-size: 25px;
-  border: solid saddlebrown;
-
-}
-
-.bemvindo {
-  font-size: 30px;
-  margin-left: 5px;
-}
-
-.Estamos {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: large;
-  align-items: center;
-  justify-content: center;
-}
-
-.p {
-  color: rgba(255, 255, 255, 0.678);
-}
-
-
-.beneficios {
-  border: solid red;
-}
-
-ol {
-  width: 90vw;
-  display: inline-flex;
-
-}
-
-.box {
-  width: 400px;
-  height: 250px;
-  position: relative;
-  border-radius: 10px;
-  margin: 4%;
-  color: #ffffff;
-  border: solid 0.5px rgba(0, 0, 0, 0.61);
-  padding: 12px;
-  border: solid rgb(30, 0, 255);
-
-
-}
-
-
-
-.Prepare-se {
-  margin-left: 5px;
-}
-
-
-.slider {
-  overflow: hidden;
-  width: 25%;
-  height: 300px;
-  transform: translateX(160%);
-  border-radius: 10px;
-  color: #ffffff;
-  border: solid 0.5px rgba(0, 0, 0, 0.61);
-  text-align: center;
-
-
-}
-
-.slider p {
-  padding-left: 2%;
-  width: 70%;
-  text-align: center;
-  margin-left: 17%;
-
-}
-
-
-.slider>.slider-content {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  transition: all 500ms ease;
-
-}
-
-.slider-item {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.slider>.slider-content {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.slider>input:nth-child(1):checked~.slider-content {
-  transform: translateX(0%);
-}
-
-.slider>input:nth-child(2):checked~.slider-content {
-  transform: translateX(-100%);
-}
-
-.slider>input:nth-child(3):checked~.slider-content {
-  transform: translateX(-200%);
-}
-
-.slider>input:nth-child(4):checked~.slider-content {
-  transform: translateX(-300%);
-}
-=======
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: rgb(23, 0, 54);
-  border: 7px solid transparent;
-  background-clip: padding-box;
-  border-image: linear-gradient(to right, rgba(128, 0, 128, 0.671), #736686, #a299ae, #a299ae, #45335e, rgba(128, 0, 128, 0.671))1;
-  border-image-slice: 1;
-  color: white;
-  overflow-x: hidden;
-}
-
-.topo {
-  width: 100%;
-  height: 1010px;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
-  background: #45335e;
-  position: fixed;
-}
-
-.btns {
-  width: 15%;
-  transform: translateX(260%);
-
-}
-
-.button2,
-.button1 {
-  background: #000000;
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
-  border-radius: 20px;
-  height: 40px;
-  width: 100px;
-  font-weight: 600;
-  margin-left: 5%;
   cursor: pointer;
-}
-
-.button2:hover,
-.button1:hover {
-  border: blueviolet;
-  background: purple;
-}
-
-.h1-bv {
-  justify-self: left;
-  align-items: flex-start;
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid purple;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation:
-    typing 5s steps(30, end),
-    blink-caret .6s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 20%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: purple
-  }
-}
-
-.sobre {
-  width: 100%;
-  height: 400px;
   margin-left: 5px;
-}
-
-.h3-sobre {
   left: 20px;
   font-weight: 200;
   font-size: 25px;
-  margin-left: 5px;
-  position: relative;
-  top: 10px;
-}
-
-.explicacao {
-  width: 70%;
-  position: absolute;
-  top: 100px;
-  margin-left: 2%;
-  margin-top: 5%;
 
 }
-
 .beneficios {
   height: 250px;
   width: 100%;
 }
 
-.h1-bene {
-  left: 20px;
-  font-weight: 500;
-  font-size: 50px;
-  margin-left: 2px;
-
-}
-
-.Serviços {
-  margin-left: 5px;
-
-}
-
-.serv {
-  margin-left: 5px;
-  left: 20px;
-  font-weight: 200;
-  font-size: 25px;
-
-}
-
-.bemvindo {
-  font-size: 30px;
-  margin-left: 5px;
-}
-
 .Estamos {
+  cursor: pointer;
   font-size: 30px;
   font-weight: 600;
 }
@@ -473,227 +196,92 @@ h4 {
   font-size: large;
   align-items: center;
   justify-content: center;
+  
 }
 
 .p {
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.678);
 }
 
-.sobre,
-.beneficios {
-  width: 70%;
-  transform: translateY(30%);
-  margin-left: 5px;
-}
-
-ol {
-  width: 90vw;
-  display: inline-flex;
-
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box {
-  width: 400px;
+  width: 300px;
   height: 250px;
   position: relative;
   border-radius: 10px;
   margin: 4%;
   color: #ffffff;
-  border: solid 0.5px rgba(0, 0, 0, 0.61);
+  border: 1px solid white ;
   padding: 12px;
 
-
 }
 
-.nerdola {
-  width: 550px;
-  transform: translate(210%, -70%);
-  border: #000000;
-
+.box:hover{
+  box-shadow: 2px 2px 4px #6805fc;
+  border: 2px solid purple;
 }
+
+
 
 .Prepare-se {
   margin-left: 5px;
 }
 
+#plan{
+  border: 2px solid greenyellow;
+  
+}
 
-.slider {
+.carousel {
+  width: 80%;
+  margin: auto;
   overflow: hidden;
-  width: 25%;
-  height: 300px;
-  transform: translateX(160%);
-  border-radius: 10px;
-  color: #ffffff;
-  border: solid 0.5px rgba(0, 0, 0, 0.61);
-  text-align: center;
-  position: relative;
-  padding-top:1% ;
-
-
+  border: 1px solid #ccc;
 }
 
-.slider p {
-  padding-left: 2%;
-  width: 70%;
-  text-align: center;
-  margin-left: 17%;
-
-}
-
-
-.slider>.slider-content {
+.carousel-text {
   display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  transition: all 500ms ease;
-  flex: 0 0 auto;
-
+  transition: transform 0.5s ease-in-out;
 }
 
-.slider-item {
-  flex: 0 0 auto;
-  width: 100%;
+.carousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
 }
 
-.slider>input:nth-child(1):checked~.slider-content {
-  transform: translateX(0%);
+.carousel-item[data-active="true"] {
+  display: block;
 }
 
-.slider>input:nth-child(2):checked~.slider-content {
-  transform: translateX(-100%);
-}
-
-.slider>input:nth-child(3):checked~.slider-content {
-  transform: translateX(-200%);
-}
-
-.slider>input:nth-child(4):checked~.slider-content {
-  transform: translateX(-300%);
-}
-
-
-
-@media(max-width:1200px){
-  .topo{
-    height: 900px;
+@media(max-width:1100px)  {
+  .nav-img{
+    width: 350px;
   }
-  nav{
-    height: 70px;
+
+  .h1-bv{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .nav-links{
+    display: flex;
+    height: 40%;
+    padding-left: 20px;
+  
   }
 
   .btns{
-    display: flex;
-    width: 100px;
-  }
 
-  .img-logo{
-    transform: translate(1px, 2px);
-    width: 60px;
-    height: 60px;
-  }
-  .sobre,.beneficios  {
-    height: 330px;
-  }
-  .sobre h1{
-    font-size: 30px;
-  }
-
-  .nerdola{
-    transform: translate(470px, -470px);
-  }
-
-  .Serviços{
-   
-    height: 810px;
-  }
-
-  .box{
-    height: 450px;
-    width: 500px;
-  }
-
-  .plan{
-    height: 600px;
-  }
-
-  .slider{
-    height: 440px;
+    width: 40%;
   }
 }
-
-footer{
-    width: 100vw;
-    height: 351px;
-    background-image: linear-gradient(to right, black, purple);
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-
-}
-.email{
-    width: 290px;
-    height: 40px;
-    position: relative;
-    margin-top: 5rem;
-    border-radius: 7px;
-
-}
-
-footer li{
-    list-style: none;
-}
-.recursos a{
-    color: white;
-    text-decoration: none;
-}
-.Precos a{
-    color: white;
-}
-
-.contato a{
-    color: white;
-}
-.institucional a{
-
- color: seashell;
- text-decoration: none;
-}
-
-.esqueci{
-    width: 100vw;
-    height: 298px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.copy{
-    width: 100vw;
-}
-
-.copy p{
-
-    width: 100vw;
-    height: 40px;
-    text-align: center;
-    margin-top: 6px;
-
-
-}
-.seta{
-    color: white;
-    position: relative;
-    right:10%;
-    bottom: 22%;   
-}
-
-.imgs{
-    display: flex;
-  justify-content: flex-start;
-  right: 33%;
-position: relative;
-margin-top: 11px;
-
-}
->>>>>>> c6760ab261deae908368a99af99433910165998b
